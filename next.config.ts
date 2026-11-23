@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   experimental: {
     agentFeedback: true,
   },
+  outputFileTracingIncludes: {
+    "/": ["./prisma/dev.db"],
+  },
 };
 
 export default nextConfig;
